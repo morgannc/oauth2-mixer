@@ -302,8 +302,9 @@ This will register bindings in the IoC container for the Mixer Provider, so you 
 `\Morgann\OAuth2\Client\Mixer\Provider\Mixer` in your controller methods and it will yield a properly configured
 instance.
 ) for details.
-Testing
 
+Testing
+---------
 Tests can be run with:
 
 ```bash
