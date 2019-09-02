@@ -1,0 +1,19 @@
+image: php:7.2
+
+cache:
+  paths:
+    - vendor/
+
+before_script:
+  - apt-get update -yqq
+  - apt-get install git -yqq
+  - pecl install xdebug
+  - docker-php-ext-enable xdebug
+  - curl -sS https://getcomposer.org/installer | php
+  - php composer.phar install
+
+test:phpunit:
+  stage: test
+  coverage: '/^\s*Lines:\s*\d+.\d+\%/'
+  script:
+    - vendor/bin/phpunit --coverage-text --verbose --color=never

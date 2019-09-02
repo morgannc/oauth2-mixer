@@ -1,0 +1,44 @@
+{
+    "name": "morgann/oauth2-mixer",
+    "description": "A Mixer provider for league/oauth2-client",
+    "keywords": [
+        "oauth",
+        "oauth2",
+        "authorization",
+        "authentication",
+        "idp",
+        "identity",
+        "sso",
+        "single sign on",
+        "mixer",
+        "mixer api"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Morgann Collet",
+            "email": "morgann.collet@gmail.com"
+        }
+    ],
+    "require": {
+        "league/oauth2-client": "1.*|2.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "~1.2",
+        "squizlabs/php_codesniffer": "~3.4",
+        "phpunit/phpunit": "~8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Morgann\\OAuth2\\Client\\Mixer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Morgann\\OAuth2\\Client\\Mixer\\Test\\": "test/src/"
+        }
+    },
+    "scripts": {
+        "phpunit": "./vendor/bin/phpunit --coverage-text --verbose --color=always"
+    }
+}
