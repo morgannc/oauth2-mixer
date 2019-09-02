@@ -1,6 +1,7 @@
 {
     "name": "morgann/oauth2-mixer",
     "description": "A Mixer provider for league/oauth2-client",
+    "version": "1.0.0",
     "keywords": [
         "oauth",
         "oauth2",
